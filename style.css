@@ -53,6 +53,11 @@ a {
 	clear: both;
 	cursor: pointer;
 }
+#FullContent h2 sup {
+	font-size: 8px;
+	width: 20px;
+	float: left;
+}
 #FullContent div {
 	clear: both;
 	margin: 0px 0px 0px 10px;

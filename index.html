@@ -8,6 +8,12 @@
 $(document).ready(function(){
 	$("h2").click(function(){
 		$("#C" + $(this).attr("id").substr(1)).toggle();
+		var $el = $(this).find("sup").first();
+		if($el.text() == "[-]") {
+			$el.html("[+]");
+		} else {
+			$el.html("[-]");
+		}
 	});
 });
 </script>
@@ -22,22 +28,22 @@ $(document).ready(function(){
 	</a>
 </div>
 <div id="FullContent">
-	<h2 id="HPersonalData">Rafael  Ravena Vicente (9/6/1981): Brasileiro, Solteiro</h2>
+	<h2 id="HPersonalData"><sup>[-]</sup> Rafael  Ravena Vicente (9/6/1981): Brasileiro, Solteiro</h2>
 	<div id="CPersonalData">
 		<span class="field-label">Telefones:</span><span class="field-data">+55 11  3554-1914 | +55 11 99135-7676</span>
 		<span class="field-label">E-mail:</span><span class="field-data"><a href="mailto:rafael.ravena@gmail.com">rafael.ravena@gmail.com</a></span>
 		<span class="field-label">Endereço:</span><span class="field-data">Rua Visconde do Bom Retiro, 174 – Vila São Luis – São Paulo – SP</span>
 		<span class="field-label">Cep:</span><span class="field-data">05362-060</span>	</div>
-	<h2 id="HInterest">Área de Interesse</h2>
+	<h2 id="HInterest"><sup>[-]</sup> Área de Interesse</h2>
 	<div id="CInterest">
 		<p>Desenvolvimento de aplicações e análise de sistemas, como analista  de requisitos, analista funcional, analista desenvolvedor ou coordenador de  equipe.</p>
 	</div>
-	<h2 id="HQualifications">Qualificações Gerais</h2>
+	<h2 id="HQualifications"><sup>[-]</sup> Qualificações Gerais</h2>
 	<div id="CQualifications">
 		<p>Possuo formação acadêmica voltada para a área de Tecnologia,  com foco em gerenciamento de projetos e coordenação de equipes. Também, uma abordagem  diversificada, visando Exatas (Sistemas de Informação) e Humanas (Publicidade e  Propaganda).<br />
 			Procuro estudos extracurriculares e literatura voltados para  a área gerencial, apoiado em um perfil naturalmente voltado para a liderança e  trabalho em equipe.</p>
 	</div>
-	<h2 id="HKnowledge">Conhecimento Específico na Área</h2>
+	<h2 id="HKnowledge"><sup>[-]</sup> Conhecimento Específico na Área</h2>
 	<div id="CKnowledge">
 		<p>Desenvolvi sólidos conhecimentos em projetos de software  para a plataforma Microsoft com <strong>.Net  Framework</strong> (<strong>C# e VB.Net</strong>),  procurando aplicá-los profissionalmente voltado a metas, desafios e resultados,  de forma proativa e colaborativa.<br />
 			Além da utilização nas situações profissionais, participei  de diversos cursos para o aprofundamento em linguagens de programação,  adquirindo vasto conhecimento tanto para web (<strong>HTML, asp VB Script, asp.net, asp.net MVC, CSS, Javascript, JQuery, Web  Services, WCF</strong>) quanto para desktop (<strong>Windows  Forms, Windows Services, WPF</strong>) e mobile (<strong>Windows Phone</strong>).<br />
@@ -45,7 +51,7 @@ $(document).ready(function(){
 			Em diversas ocasiões tive a oportunidade de atuar  diretamente com levantamento de requisitos e documentação de software,  atividades nas quais acredito ter maior desenvoltura.<br />
 			Domino as seguintes ferramentas, plataformas, arquiteturas e  tecnologias: MS Office, MS Visual Studio Suite, MS Project, Enterprise Architect,  BPMN, UML, SOA, RIA, Dreamweaver, Fireworks, Photoshop, Corel Draw, InDesign,  Illustrator.</p>
 	</div>
-	<h2 id="HExperience">Experiência Profissional</h2>
+	<h2 id="HExperience"><sup>[-]</sup> Experiência Profissional</h2>
 	<div id="CExperience">
 		
 		<h3>VTX Brasil (Janeiro/2014)</h3>
@@ -91,17 +97,17 @@ $(document).ready(function(){
 		<p class="job-entry">Analista Desenvolvedor</p>
 		<p class="job-description">Levantamento de requisitos; modelagem de sistemas com UML;  desenvolvimento de aplicações RIA (ASP + Javascript + AJAX); conceito de  aplicações web assíncronas sem XML HTTP Request; desenvolvimento de portais web  com ASP VBScript e ASP.Net.</p>
 	</div>
-	<h2 id="HAcademy">Formação Acadêmica </h2>
+	<h2 id="HAcademy"><sup>[-]</sup> Formação Acadêmica </h2>
 	<div id="CAcademy">
 		<p><strong>Sistemas de  Informação (2007 a 2010)</strong> – Universidade São Judas Tadeu <br />
 			<strong>Publicidade e  Propaganda– Criação (2002 a 2006)</strong> – Mackenzie – Incompleto</p>
 	</div>
-	<h2 id="HLanguages">Idiomas</h2>
+	<h2 id="HLanguages"><sup>[-]</sup> Idiomas</h2>
 	<div id="CLanguages">
 		<p><strong>Inglês Fluente em  escrita, leitura e conversação - </strong>Cultura Inglesa (1990 a 2001) - Último  nível alcançado: Accuracy in Conversation in English<br />
 			<strong>Espanhol Básico em  Leitura, Conversação</strong></p>
 	</div>
-	<h2 id="HCourses">Cursos</h2>
+	<h2 id="HCourses"><sup>[-]</sup> Cursos</h2>
 	<div id="CCourses">
 		<p><strong>Impacta Tecnologia</strong><br />
 			SQL 2005 / ADO.NET / ASP.NET / VB.NET / Visual Basic  [ActiveX Component Writer] / Visual Basic [Essentials]<br />
