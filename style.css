@@ -89,6 +89,9 @@ a {
 	font-weight: bold;
 	padding: 5px 0px 0px 20px;
 }
+.job-entry  i {
+	font-weight: normal;
+}
 .job-description {
 	padding-left: 30px;
 }
