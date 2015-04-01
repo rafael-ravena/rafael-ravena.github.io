@@ -22,7 +22,7 @@ body, * {
 			color: #FFFFFF;
 		}
 
-			#Header header p a:hover {
+			#Header header p a:hover, #Header header p a:active, #Header header p a:visited {
 				color: #DFDFDF;
 			}
 
