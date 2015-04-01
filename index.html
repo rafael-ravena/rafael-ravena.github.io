@@ -1,122 +1,180 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Rafael Ravena Vicente</title>
-<script src="jquery-1.11.1.min.js" language="javascript" type="text/javascript"></script>
-<script language="javascript" type="text/javascript">
-$(document).ready(function(){
-	$("h2").click(function(){
-		$("#C" + $(this).attr("id").substr(1)).toggle();
-		var $el = $(this).find("sup").first();
-		if($el.text() == "[-]") {
-			$el.html("[+]");
-		} else {
-			$el.html("[-]");
-		}
-	});
-});
-</script>
-<link href="style.css" type="text/css" media="screen" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Currículo Profissional de Rafael Ravena Vicente</title>
+	<link rel="stylesheet" href="Content/bootstrap.min.css" />
+	<link rel="stylesheet" href="Content/style.css" type="text/css" media="screen" />
+	<script src="Scripts/jquery-1.10.2.min.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="LeftContent">
-	<h1>RafaelRavenaVicente();</h1>
-	<a href="RafaelRavena.docx" target="_blank" title="Baixar versão para impressão">
-		<img src="printable.png" align="Baixar versão para impressão" /><br />
-		versão para impressão
-	</a>
-</div>
-<div id="FullContent">
-	<h2 id="HPersonalData"><sup>[-]</sup> Rafael  Ravena Vicente (9/6/1981): Brasileiro, Solteiro</h2>
-	<div id="CPersonalData">
-		<span class="field-label">Telefones:</span><span class="field-data">+55 11  3554-1914 | +55 11 99135-7676</span>
-		<span class="field-label">E-mail:</span><span class="field-data"><a href="mailto:rafael.ravena@gmail.com">rafael.ravena@gmail.com</a></span>
-		<span class="field-label">Endereço:</span><span class="field-data">Rua Visconde do Bom Retiro, 174 – Vila São Luis – São Paulo – SP</span>
-		<span class="field-label">Cep:</span><span class="field-data">05362-060</span>	</div>
-	<h2 id="HInterest"><sup>[-]</sup> Área de Interesse</h2>
-	<div id="CInterest">
-		<p>Desenvolvimento de aplicações e análise de sistemas, como analista  de requisitos, analista funcional, analista desenvolvedor ou coordenador de  equipe.</p>
+	<div class="container-fluid">
+		<div id="Header" class="row">
+			<h1 class="col-lg-12">Rafael Ravena Vicente</h1>
+			<header class="col-sm-4">
+				<p><span class="glyphicon glyphicon-globe"></span> Brasileiro, Solteiro</p>
+				<p><span class="glyphicon glyphicon-calendar"></span> Nascido em 09/06/1981</p>
+				<p><span class="glyphicon glyphicon-plane"></span> Disponível para viagens</p>
+			</header>
+			<header class="col-sm-4">
+				<p>
+					<span class="glyphicon glyphicon-envelope"></span>
+					<a href="mailto:rafael.ravena@gmail.com">rafael.ravena@gmail.com</a>
+				</p>
+				<p><span class="glyphicon glyphicon-phone-alt"></span> +55 11 3554-1914</p>
+				<p><span class="glyphicon glyphicon-phone"></span> +55 11 9 9135-7676</p>
+			</header>
+			<header class="col-sm-4">
+				<p><span class="glyphicon glyphicon-home"></span> Rua Visconde do Bom Retiro, 174</p>
+				<p><span class="glyphicon glyphicon-globe"></span> Vila São Luís, São Paulo, SP, Brasil</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span> 05362-060</p>
+			</header>
+		</div>
+		<div id="Content" class="row">
+			<div class="row button-line">
+				<a class="btn btn-lg btn-block print-button" href="Rafael.Ravena.docx" title="Clique para baixar a versão em Word"><span class="glyphicon glyphicon-print"></span> Versão para impressão </a>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<h3><span class="glyphicon glyphicon-star"></span> Área de Interesse</h3>
+				<p>Desenvolvimento de aplicações e análise de sistemas, como analista de requisitos, analista funcional, analista desenvolvedor ou coordenador de equipes.</p>
+				<hr />
+				<h3><span class="glyphicon glyphicon-tags"></span> Qualificações Gerais</h3>
+				<p>
+					Possuo formação acadêmica voltada para a área de Tecnologia, com foco em gerenciamento de projetos e coordenação de equipes. Também, uma abordagem diversificada, visando Exatas (Sistemas de Informação) e Humanas (Publicidade e Propaganda).<br />
+					Procuro estudos extracurriculares e literatura voltados para a área gerencial, apoiado em um perfil naturalmente voltado para a liderança.<br />
+					Desenvolvi grande experiência com trabalho em equipes, focando especialmente em "colaboratividade" e compartilhamento de conhecimento, bem como tarefas em conjunto e integração de pessoas.
+				</p>
+				<hr />
+				<h3><span class="glyphicon glyphicon-bookmark"></span>Conhecimento Específico na Área</h3>
+				<ul class="list-group row conhecimentos">
+					<li class="list-group-item">Arquitetura e Linguagens</li>
+					<li class="list-group-item col-lg-6 col-sm-12">Bootstrap <span class="badge">1 ano</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Windows Phone <span class="badge">2 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Web API <span class="badge">2 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">ASP.Net MVC <span class="badge">3 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">JQuery <span class="badge">5 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">WPF <span class="badge">5 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">WCF <span class="badge">5 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Posgree <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Windows Services <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Web Services <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">ASP.Net AJAX <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Sybase <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">C# <span class="badge">8 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">VB.Net <span class="badge">8 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">ASP.Net <span class="badge">8 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">PL/SQL <span class="badge">8 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">VB 6 <span class="badge">10 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">ASP 3 <span class="badge">10 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">T-SQL <span class="badge">10 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Javascript <span class="badge">12 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">CSS <span class="badge">12 anos</span></li>
+				</ul>
+				<ul class="list-group row conhecimentos">
+					<li class="list-group-item">Tecnologias, Plataformas e Conceitos</li>
+					<li class="list-group-item col-lg-6 col-sm-12">BPMN <span class="badge">5 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">UML <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">SOA <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">MS-Project <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Design Patterns <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Metodologias Ágeis <span class="badge">6 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Visual Studio <span class="badge">10 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">RIA <span class="badge">10 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">Adobe Design Suite <span class="badge">12 anos</span></li>
+					<li class="list-group-item col-lg-6 col-sm-12">MS-Office <span class="badge">15 anos</span></li>
+				</ul>
+				<hr />
+				<h3><span class="glyphicon glyphicon-book"></span> Formação Acadêmica</h3>
+				<p>
+					<strong>Sistemas de Informação (2007 a 2010)</strong> – Universidade São Judas Tadeu<br />
+					<strong>Publicidade e Propaganda– Criação (2002 a 2006)</strong> – Mackenzie – Incompleto
+				</p>
+				<hr />
+				<h3><span class="glyphicon glyphicon-volume-up"></span> Idiomas</h3>
+				<p>
+					<strong>Inglês Fluente em escrita, leitura e conversação</strong><br /> Cultura Inglesa (1990 a 2001) - Último nível alcançado: Accuracy in Conversation in English<br />
+					<strong>Espanhol Básico em Leitura, Conversação</strong>
+				</p>
+				<hr />
+				<h3><span class="glyphicon glyphicon-certificate"></span> Cursos</h3>
+				<p>
+					<strong>Impacta Tecnologia</strong>
+					SQL 2005 / ADO.NET / ASP.NET / VB.NET / Visual Basic [ActiveX Component Writer] / Visual Basic [Essentials]<br />
+					<strong>SENAC</strong>
+					ASP [Sites Dinâmicos I] / Lógica de Programação / Flash Programado I / Básico de Produção de Websites
+				</p>
+			</div>
+			<div class="col-sm-8">
+				<h3><span class="glyphicon glyphicon-road"></span> Experiência Profissional</h3>
+				<div class="dotted-border">
+					<h4>Ravena Consultoria e Serviços em TI (Novembro/2012 - Atualmente)</h4>
+					<p>
+						Desenvolvi projetos particulares e prestei consultoria, como autônomo, à diversas empresas durante o período, podendo ampliar e aprofundar as áreas de conhecimento as necessárias nos dados momentos.<br />
+						<strong>Sistema de gestão escolar</strong><br />
+						Focado no processo pedagógico (coordenadoria, professorado) e na interação professor-aluno, escola-família e coordenação-professor, o projeto surgiu diante da necessidade de uma aplicação que pudesse sanar as diversas dificuldades dos professores e coordenadores de uma escola, tais como o processo ser essencialmente manual (dificuldade em analise de dados, retrabalho no preenchimento de documentos, dispersão de informação), armazenamento de documentos em papel, extravio de documentação, comunicação com a família do aluno, entre outras.<br />
+						<strong>Consultoria em Processos e Sistemas</strong><br />
+						Apoio e consultoria para empresas, auxiliando na contratação ou adesão à softwares terceiros, a definição de padrões ou melhores práticas, e desenvolvendo pequenas aplicações para apoio aos processos corporativos de diversas áreas.<br />
+						<strong>Treinamento em ferramentas gratuitas</strong><br />
+						Treinamento na utilização das mais variadas ferramentas open source (como Google Calendar e o Google Docs) para áreas específicas de empresas, visando automatizar processos, aumentar a produtividade da equipe, simplificar e adequar a utilização das ferramentas, e assegurar a redundância de processos corporativos. Criação de material didático variado para os treinamentos, bem como tutoriais, exercícios e apresentações multimídia para o apoio aos treinamentos.<br />
+						<strong>Apps Windows Phone</strong><br />
+						Desenvolvimento de aplicativos mobile para a plataforma Windows Phone, sob demanda da VTX Brasil (Startup brasileira com projetos no Brasil e no exterior, focada em desenvolvimento de aplicativos mobile com soluções de reconhecimento de imagem, que possui como principais clientes as seguintes empresas: Netshoes, Netfarma, Qualcomm, Via Varejo, UOL Shopping); Desenvolvimento de componentes reutilizáveis; Identificação e implementação dos processos de utilização dos aplicativos.<br />
+						<strong>Freelancer em Serviços Diversos</strong><br />
+						Atuação como produtor de eventos ou auxiliar, apoiando a montagem do evento, organização de materiais para uso durante a execução do evento, documentação e relatórios das execuções dos eventos, organização e acompanhamento de convidados, acompanhamento de convidados estrangeiros, chapelaria.
+					</p>
+				</div>
+				<div class="dotted-border">
+					<h4>CWI Software (Maio/2012 – Outubro/2012)</h4>
+					<p>
+						<em>Empresa brasileira com projetos no Brasil e no exterior, focada nas variadas áreas de TI, principalmente confecção de projetos de software, outsourcing e fábrica de software.</em><br />
+						Principais clientes: Wal Mart, Tam, Banco Fibra, Odebrecht.<br />
+						<strong>Analista de Sistemas (Wal Mart)</strong><br />
+						Levantamento de requisitos e documentação com UML; Desenvolvimento, modelagem e manutenção de aplicações .Net com asp.net MVC Razor e C#, de Bancos de Dados SQL Server e Oracle; Desenvolvimento de web-services, componentes, serviços e controles Windows com C#.
+					</p>
+				</div>
+				<div class="dotted-border">
+					<h4>Itaú – Unibanco (Agosto/2011 – Dezembro/2011)</h4>
+					<p>
+						<em>Banco brasileiro com grande visibilidade internacional, líder de mercado na maioria dos segmentos bancários. Maior banco da América-Latina, 7º maior banco privado mundial.</em><br />
+						<strong>Analista Desenvolvedor</strong><br />
+						Levantamento de requisitos de software; Documentação e modelagem de processos empresariais; Codificação em C# de aplicações web, serviços e controles Windows. Atuação nos sistemas das áreas de tesouraria, back-office, offshore investment, cobrança.
+					</p>
+				</div>
+				<div class="dotted-border">
+					<h4>Recognition RCBAB  (Maio/2011 – Julho /2011)</h4>
+					<p>
+						<em>Empresa brasileira que disponibiliza aplicativos voltados para a automação bancária e soluções para a digitalização de documentos, como os processos de truncagem e de compensação de cheques e aprovação de documentação para financiamentos imobiliários.</em><br />
+						Principais clientes: Bradesco, Santander, Banese, Caixa Econômica Federal.<br />
+						<strong>Analista de Sistemas</strong><br />
+						Levantamento de requisitos de software; Planejamento e projeto de software; Codificação em C# de aplicações web, serviços e controles Windows; Atuação principalmente no sistema de automatização de compensação bancária do Banco Banese.
+					</p>
+				</div>
+				<div class="dotted-border">
+					<h4>Grupo Meta (Novembro/2009 – Abril/2011)</h4>
+					<p>
+						<em>Multinacional brasileira que utiliza a tecnologia da informação e modelos empresariais para montar e administrar Outsourcing, Consultoria e SAP. O grupo tem sua qualidade comprovada no certificado CMMI nível 3, obtido em 2010, além dos 20 anos de atuação no mercado nacional e internacional.</em><br />
+						Principais clientes: Principais clientes: Porto Seguro, Banco Fibra, Vivo, Gerdau, Allianz, Claro, Brasil Telecom, TAM.<br />
+						<strong>Líder de Equipe (Outubro/2010) (.Net Porto Seguro)</strong><br />
+						Contratação, treinamento e gestão de profissionais da equipe; Direcionamento e acompanhamento da execução (codificação) dos projetos da equipe; Detalhamento dos padrões de desenvolvimento e arquitetura de sistemas; Detalhamento de projetos e gestão de esforço; Negociação de prazo com cliente e própria equipe.<br />
+						<strong>Analista Desenvolvedor (Banco Fibra)</strong><br />
+						Levantamento de requisitos; Modelagem de sistemas com UML; Desenvolvimento e manutenção de aplicações desktop com VB.net e C#, de Bancos de Dados SQL Server e Sybase; Desenvolvimento de componentes SSIS (transformação de dados), serviços WCF, componentes e controles WPF; Documentação funcional e técnica.
+					</p>
+				</div>
+				<div class="dotted-border">
+					<h4>Gotoweb Informática (Agosto/2005 a Novembro/2009)</h4>
+					<p>
+						<em>Software House com foco em aplicativos proprietários, intranets e portais de informação.</em><br />
+						Principais clientes: São Paulo Anjos, Chilli Beans, Vibe Academia, Diário de Noticias, Ricardo Tayar Imóveis.<br />
+						<strong>Sócio Empreendedor (Agosto/2007)</strong><br />
+						Responsável pela área de desenvolvimento da empresa, atuando principalmente em levantamento de requisitos, arquitetura de sistemas, modelagem e documentação, e codificação propriamente dita.<br />
+						Os principais projetos forma o Espelho Digital, desenvolvido para a Chilli Beans, um sistema de integração de diversas áreas da Vibe Academia (Administrativo, cobrança, controle de acesso integrado com pagamentos), e o sistema de gestão e acompanhamento de projetos da São Paulo Anjos.<br />
+						<strong>Analista Desenvolvedor</strong><br />
+						Levantamento de requisitos; modelagem de sistemas com UML; desenvolvimento de aplicações RIA (ASP + Javascript + AJAX); conceito de aplicações web assíncronas sem XML HTTP Request; desenvolvimento de portais web com ASP VBScript e ASP.Net.
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<h2 id="HQualifications"><sup>[-]</sup> Qualificações Gerais</h2>
-	<div id="CQualifications">
-		<p>Possuo formação acadêmica voltada para a área de Tecnologia,  com foco em gerenciamento de projetos e coordenação de equipes. Também, uma abordagem  diversificada, visando Exatas (Sistemas de Informação) e Humanas (Publicidade e  Propaganda).<br />
-			Procuro estudos extracurriculares e literatura voltados para  a área gerencial, apoiado em um perfil naturalmente voltado para a liderança e  trabalho em equipe.</p>
-	</div>
-	<h2 id="HKnowledge"><sup>[-]</sup> Conhecimento Específico na Área</h2>
-	<div id="CKnowledge">
-		<p>Desenvolvi sólidos conhecimentos em projetos de software  para a plataforma Microsoft com <strong>.Net  Framework</strong> (<strong>C# e VB.Net</strong>),  procurando aplicá-los profissionalmente voltado a metas, desafios e resultados,  de forma proativa e colaborativa.<br />
-			Além da utilização nas situações profissionais, participei  de diversos cursos para o aprofundamento em linguagens de programação,  adquirindo vasto conhecimento tanto para web (<strong>HTML, asp VB Script, asp.net, asp.net MVC, CSS, Javascript, JQuery, Web  Services, WCF</strong>) quanto para desktop (<strong>Windows  Forms, Windows Services, WPF</strong>) e mobile (<strong>Windows Phone</strong>).<br />
-			Possuo 10 anos de experiência com desenvolvimento de  aplicações web, utilizando banco de dados mais comuns no mercado, como Oracle,  MS SQL, Sybase e Posgree.<br />
-			Em diversas ocasiões tive a oportunidade de atuar  diretamente com levantamento de requisitos e documentação de software,  atividades nas quais acredito ter maior desenvoltura.<br />
-			Domino as seguintes ferramentas, plataformas, arquiteturas e  tecnologias: MS Office, MS Visual Studio Suite, MS Project, Enterprise Architect,  BPMN, UML, SOA, RIA, Dreamweaver, Fireworks, Photoshop, Corel Draw, InDesign,  Illustrator.</p>
-	</div>
-	<h2 id="HExperience"><sup>[-]</sup> Experiência Profissional</h2>
-	<div id="CExperience">
-		
-		<h3>Autônomo (Novembro/2012 – Atualmente)</h3>
-		<p class="company-description">Desenvolvi projetos particulares e prestei consultoria à diversas empresas durante o período, podendo ampliar e aprofundar as áreas de conhecimento as necessárias nos dados momentos.</p>
-		<p class="job-entry">Sistema de gestão escolar</p>
-		<p class="job-description">Focado no processo pedagógico (coordenadoria, professorado) e na interação professor-aluno, escola-família e coordenação-professor, o projeto surgiu diante da necessidade de uma aplicação que pudesse sanar as diversas dificuldades dos professores e coordenadores de uma escola, tais como o processo ser essencialmente manual (dificuldade em analise de dados, retrabalho no preenchimento de documentos, dispersão de informação), armazenamento de documentos em papel, extravio de documentação, comunicação com a família do aluno, entre outras.</p>
-		<p class="job-entry">Consultoria em Processos e Sistemas</p>
-		<p class="job-description">Apoio e consultoria para empresas, auxiliando na contratação ou adesão à softwares terceiros, a definição de padrões ou melhores práticas, e desenvolvendo pequenas aplicações para apoio aos processos corporativos de diversas áreas.</p>
-		<p class="job-entry">Treinamento em ferramentas gratuitas</p>
-		<p class="job-description">Treinamento na utilização das mais variadas ferramentas open source (como Google Calendar e o Google Docs) para áreas específicas de empresas, visando automatizar processos, aumentar a produtividade da equipe, simplificar e adequar a utilização das ferramentas, e assegurar a redundância de processos corporativos. Criação de material didático variado para os treinamentos, bem como tutoriais, exercícios e apresentações multimídia para o apoio aos treinamentos.</p>
-		<p class="job-entry">Apps Windows Phone</p>
-		<p class="job-description">Desenvolvimento de aplicativos mobile para a plataforma Windows Phone, sob demanda da VTX Brasil (Startup brasileira com projetos no Brasil e no exterior, focada em desenvolvimento de aplicativos mobile com soluções de reconhecimento de imagem, que possui como principais clientes as seguintes empresas: Netshoes, Netfarma, Qualcomm, Via Varejo, UOL Shopping); Desenvolvimento de componentes reutilizáveis; Identificação e implementação dos processos de utilização dos aplicativos.</p>
-		<p class="job-entry">Freelancer em Serviços Diversos</p>
-		<p class="job-description">Atuação como produtor de eventos ou auxiliar, apoiando a montagem do evento, organização de materiais para uso durante a execução do evento, documentação e relatórios das execuções dos eventos, organização e acompanhamento de convidados, acompanhamento de convidados estrangeiros, chapelaria.</p>
-
-		<h3>CWI Software (Maio/2012 – Outubro/2012)</h3>
-		<p class="company-description">Empresa brasileira com projetos no Brasil e  no exterior, focada nas variadas áreas de TI, principalmente confecção de  projetos de software, outsourcing e fábrica de software.</p>
-		<p class="company-customers"><strong>Principais clientes</strong>: Wal Mart, Tam, Banco  Fibra, Odebrecht.</p>
-		<p class="job-entry">Analista de Sistemas (Wal Mart)</p>
-		<p class="job-description">Levantamento de requisitos e documentação com UML;  Desenvolvimento, modelagem e manutenção de aplicações .Net com asp.net MVC  Razor e C#, de Bancos de Dados SQL Server e Oracle; Desenvolvimento de  web-services, componentes, serviços e controles Windows com C#.</p>
-
-		<h3>Itaú – Unibanco (Agosto/2011 – Dezembro/2011)</h3>
-		<p class="company-description">Banco brasileiro com grande visibilidade  internacional, líder de mercado na maioria dos segmentos bancários. Maior banco  da América-Latina, 7º maior banco privado mundial.</p>
-		<p class="job-entry">Analista Desenvolvedor</p>
-		<p class="job-description">Levantamento de requisitos de software; Documentação e  modelagem de processos empresariais; Codificação em C# de aplicações web,  serviços e controles Windows. Atuação nos sistemas das áreas de tesouraria,  back-office, offshore investment, cobrança.</p>
-
-		<h3>Recognition RCBAB  (Maio/2011 – Julho  /2011)</h3>
-		<p class="company-description">Empresa brasileira que disponibiliza  aplicativos voltados para a automação bancária e soluções para a digitalização  de documentos, como os processos de truncagem e de compensação de cheques e  aprovação de documentação para financiamentos imobiliários.</p>
-		<p class="company-customers"><strong>Principais clientes</strong>: Bradesco, Santander,  Banese, Caixa Econômica Federal.</p>
-		<p class="job-entry">Analista de Sistemas</p>
-		<p class="job-description">Levantamento de  requisitos de software; Planejamento e projeto de software; Codificação em  C# de aplicações web, serviços e controles Windows; Atuação principalmente no sistema de automatização de compensação  bancária do Banco Banese.</p>
-
-		<h3>Grupo Meta (Novembro/2009 – Abril/2011)</h3>
-		<p class="company-description">Multinacional brasileira que utiliza a  tecnologia da informação e modelos empresariais para montar e administrar  Outsourcing, Consultoria e SAP. O grupo tem sua qualidade comprovada no  certificado CMMI nível 3, obtido em 2010, além dos 20 anos de atuação no  mercado nacional e internacional.</p>
-		<p class="company-customers"><strong>Principais clientes</strong>: Principais clientes: Porto Seguro, Banco  Fibra, Vivo, Gerdau, Allianz, Claro, Brasil Telecom, TAM.</p>
-		<p class="job-entry">Líder de Equipe (Outubro/2010) (.Net Porto Seguro)</p>
-		<p class="job-description">Contratação, treinamento e gestão de profissionais da equipe;  Direcionamento e acompanhamento da execução (codificação) dos projetos da  equipe; Detalhamento dos padrões de desenvolvimento e arquitetura de sistemas;  Detalhamento de projetos e gestão de esforço; Negociação de prazo com cliente e  própria equipe.</p>
-		<p class="job-entry">Analista Desenvolvedor (Banco Fibra)</p>
-		<p class="job-description">Levantamento de requisitos; Modelagem de sistemas com UML;  Desenvolvimento e manutenção de aplicações desktop com VB.net e C#, de Bancos  de Dados SQL Server e Sybase; Desenvolvimento de componentes SSIS  (transformação de dados), serviços WCF, componentes e controles WPF;  Documentação funcional e técnica.</p>
-
-		<h3>Gotoweb Informática (Agosto/2005 a Novembro/2009)</h3>
-		<p class="company-description">Software House com foco em aplicativos proprietários,  intranets e portais de informação.</p>
-		<p class="company-customers"><strong>Principais clientes</strong>: São Paulo Anjos, Chilli Beans, Vibe  Academia, Diário de Noticias, Ricardo Tayar Imóveis.</p>
-		<p class="job-entry">Sócio Empreendedor (Agosto/2007)</p>
-		<p class="job-description">Responsável pela  área de desenvolvimento da empresa, atuando principalmente em levantamento de  requisitos, arquitetura de sistemas, modelagem e documentação, e codificação  propriamente dita.<br />Os principais  projetos forma o Espelho Digital, desenvolvido para a Chilli Beans, um sistema  de integração de diversas áreas da Vibe Academia (Administrativo, cobrança,  controle de acesso integrado com pagamentos), e o sistema de gestão e  acompanhamento de projetos da São Paulo Anjos.</p>
-		<p class="job-entry">Analista Desenvolvedor</p>
-		<p class="job-description">Levantamento de requisitos; modelagem de sistemas com UML;  desenvolvimento de aplicações RIA (ASP + Javascript + AJAX); conceito de  aplicações web assíncronas sem XML HTTP Request; desenvolvimento de portais web  com ASP VBScript e ASP.Net.</p>
-	</div>
-	<h2 id="HAcademy"><sup>[-]</sup> Formação Acadêmica </h2>
-	<div id="CAcademy">
-		<p><strong>Sistemas de  Informação (2007 a 2010)</strong> – Universidade São Judas Tadeu <br />
-			<strong>Publicidade e  Propaganda– Criação (2002 a 2006)</strong> – Mackenzie – Incompleto</p>
-	</div>
-	<h2 id="HLanguages"><sup>[-]</sup> Idiomas</h2>
-	<div id="CLanguages">
-		<p><strong>Inglês Fluente em  escrita, leitura e conversação - </strong>Cultura Inglesa (1990 a 2001) - Último  nível alcançado: Accuracy in Conversation in English<br />
-			<strong>Espanhol Básico em  Leitura, Conversação</strong></p>
-	</div>
-	<h2 id="HCourses"><sup>[-]</sup> Cursos</h2>
-	<div id="CCourses">
-		<p><strong>Impacta Tecnologia</strong><br />
-			SQL 2005 / ADO.NET / ASP.NET / VB.NET / Visual Basic  [ActiveX Component Writer] / Visual Basic [Essentials]<br />
-			<strong>SENAC</strong><br />
-			ASP [Sites Dinâmicos I] / Lógica de Programação / Flash  Programado I / Básico de Produção de Websites</p>
-	</div>
-</div>
 </body>
 </html>
