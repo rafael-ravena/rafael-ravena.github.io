@@ -1,0 +1,122 @@
+﻿/*
+cores
+	preto:		#11100C
+	dourado:	#836F3E
+	branco:		#FEFEFE
+	cinza:		#B1B1B1
+*/
+* {
+	font-family: Helvetica, Arial, Verdana;
+}
+
+body {
+	padding-top: 100px;
+}
+
+#Head {
+	background-color: #11100C;
+}
+
+	#Head ul {
+		text-align: right;
+		margin-top: 25px;
+	}
+
+		#Head ul li {
+			display: inline;
+			list-style: none;
+			text-align: center;
+			vertical-align: bottom;
+		}
+
+			#Head ul li a {
+				margin: 0px 5px;
+				padding: 5px 15px;
+				color: #FEFEFE;
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+				#Head ul li a:hover {
+					color: #836F3E;
+					text-decoration: none;
+				}
+
+				#Head ul li a .glyphicon {
+					font-size: 18px;
+					margin: 0px 5px;
+				}
+.icon-bar {
+	background-color: #FEFEFE;
+}
+#Foot {
+	position: fixed;
+	background-color: #11100C;
+	color: #FEFEFE;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	padding: 1px 0px;
+}
+
+.form-group {
+	padding-bottom: 2px;
+}
+
+.container-fluid {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.evento-menu {
+	margin: 0px;
+	padding: 0px;
+}
+
+	.evento-menu li {
+		list-style: none;
+		margin: 1px 0px;
+	}
+
+		.evento-menu li a {
+			font-size: 14px;
+			background-color: #FCFCFC;
+			color: #11100C;
+			text-decoration: none;
+			padding: 2px;
+		}
+
+			.evento-menu li a:hover,
+			.evento-menu li a:active {
+				background-color: #836F3E;
+				color: #FEFEFE;
+				text-decoration: none;
+			}
+
+			.evento-menu li a span {
+				font-size: 10px;
+			}
+
+.evento-dados {
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #836F3E;
+}
+
+	.evento-dados * {
+		font-size: 14px;
+		color: #FEFEFE;
+	}
+
+	.evento-dados .block-head {
+		font-size: 18px;
+		font-weight: bold;
+	}
