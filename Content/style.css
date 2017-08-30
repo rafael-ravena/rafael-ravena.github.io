@@ -1,87 +1,82 @@
 ﻿@charset "utf-8";
 /* CSS Document */
+/* 
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+azul títulos: #1f4e79
+*/
+
 body, * {
-	font-family: Helvetica, Verdana, Arial;
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0px;
+  padding: 0px;
 }
-
-#Header {
-	background-color: #FF0000;
-	color: #FFFFFF;
+a, a:hover, a:active, a:focus, a:visited {
+  color: #1f4e79;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-	#Header h1 {
-		font-size: 2em;
-		text-align: center;
-	}
-
-	#Header header p {
-		font-size: 1em;
-	}
-
-		#Header header p a {
-			color: #FFFFFF;
-		}
-
-			#Header header p a:hover, #Header header p a:active, #Header header p a:visited {
-				color: #DFDFDF;
-			}
-
+h1, h2, h4 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #1f4e79;
+  text-transform: uppercase;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+}
 h3 {
-	color: #FF0000;
-	font-size: 1.2em;
-	font-weight: bold;
+  font-size: 20px;
+  color: #767171;
 }
-
-h4 {
-	color: #FF0000;
-	font-size: 1.1em;
-	font-weight: bold;
+#apresentacao {
+  background-color: #f5f5ff;
 }
-
-#Content p {
-	text-align: justify;
+#download {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  z-index: 999;
+  padding: 5px;
+  background-color: #1f4e79;
+  border: 1px solid #3f6e99;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  font-family: 'Pathway Gothic One';
+  color: #ffffff;
+  text-transform: uppercase;
 }
-
-#Content hr {
-	border-color: #FF0000;
-	margin-top: 0px;
+section {
+  border-bottom: 1px solid #1f4e79;
 }
-
-.print-button {
-	background-color: #FF0000;
-	color: #FFFFFF;
+section:last-child {
+  border-bottom: none;
 }
-
-	.print-button:hover {
-		background-color: #990000;
-		color: #DFDFDF;
-	}
-
-.dotted-border {
-	border: 1px dotted #DFDFDF;
-	padding: 5px;
-	margin-bottom: 5px;
+p {
+  padding-left: 50px;
 }
-
-	.dotted-border h4, .dotted-border p {
-		margin: 0px;
-	}
-
-.container-fluid {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+.lista-com-borda>p {
+  border-bottom: 1px dashed #cacaca;
 }
-
-ul.row {
-	margin-right: 0px;
-	margin-left: 0px;
+.lista-com-borda>p:last-child {
+  border-bottom: none;
 }
-
-.conhecimentos li {
-	padding: 5px;
+.lista-xp div {
+  margin: 10px auto;
 }
-.button-line{
-	margin: 5px 15px;
+.lista-xp div:first-child {
+  margin-top: -25px;
+}
+.lista-xp dd {
+  border-bottom: 1px dashed #cacaca;
+  padding-bottom: 5px;
+}
+.lista-xp div:last-child dd {
+  border-bottom: none;
+}
+.lista-xp h4:first-child {
+  margin-top: 18px;
+  line-height: 27px
 }
