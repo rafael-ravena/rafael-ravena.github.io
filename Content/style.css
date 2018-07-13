@@ -25,7 +25,7 @@ h1, h2, h4 {
   text-transform: uppercase;
 }
 h1 {
-  line-height: 60px;
+  margin-top: 0px;
 }
 h2 {
   font-size: 24px;
@@ -49,18 +49,20 @@ h3 {
 }
 #download {
   position: fixed;
-  top: 65px;
-  right: 0;
+  top: 60px;
+  left: 0;
   z-index: 999;
   background-color: #1f4e79;
   border: 1px solid #3f6e99;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 #download a {
   font-family: 'Pathway Gothic One';
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 20px;
 }
 #download a:hover {
   font-weight: normal;
@@ -96,4 +98,45 @@ p {
 .lista-xp h4:first-child {
   margin-top: 18px;
   line-height: 27px
+}
+
+
+/* mobile default Portrait */
+@media (max-width: 599px) and (orientation: portrait) {
+  #apresentacao {
+    background-color: #f5f5ff;
+    position: absolute;
+    height: 100vh;
+    z-index: 998
+  }
+  #download {
+    position: absolute;
+    top: initial;
+    bottom: 60px
+  }
+  body { padding-top: 100vh; }
+  p { padding-left: 0px; }
+  h1 { margin-top: 25vh; }
+}
+
+/* mobile default Landscape */
+@media (max-width: 900px) and (orientation: landscape) {
+  #apresentacao {
+    background-color: #f5f5ff;
+    position: absolute;
+    height: 100vh;
+    z-index: 998
+  }
+  #download {
+    position: absolute;
+    left: initial;
+    top: initial;
+    bottom: 60px;
+    right: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  body { padding-top: 100vh; }
+  h1 { margin-top: 10px; }
 }
