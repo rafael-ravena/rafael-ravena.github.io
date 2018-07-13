@@ -1,11 +1,4 @@
 ﻿@charset "utf-8";
-/* CSS Document */
-/* 
-font-family: 'Pathway Gothic One', sans-serif;
-font-family: 'Open Sans', sans-serif; 
-azul títulos: #1f4e79
-*/
-
 body, * {
   font-family: 'Open Sans', sans-serif; 
   margin: 0px;
@@ -101,7 +94,7 @@ p {
 }
 
 
-/* mobile default Portrait */
+/* mobile Portrait */
 @media (max-width: 599px) and (orientation: portrait) {
   #apresentacao {
     background-color: #f5f5ff;
@@ -119,7 +112,7 @@ p {
   h1 { margin-top: 25vh; }
 }
 
-/* mobile default Landscape */
+/* mobile Landscape */
 @media (max-width: 900px) and (orientation: landscape) {
   #apresentacao {
     background-color: #f5f5ff;
@@ -139,4 +132,19 @@ p {
   }
   body { padding-top: 100vh; }
   h1 { margin-top: 10px; }
+}
+
+/* tablet Landscape */
+@media (max-width: 1024px) and (orientation: portrait) {
+  #apresentacao {
+    background-color: #f5f5ff;
+    height: 160px;
+    z-index: 998
+  }
+  #apresentacao p { padding-left: 0px; }
+  #download {
+    display: none;
+  }
+  body { padding-top: 160px; }
+  h1 { margin-top: 0px; width: 50%; }
 }
