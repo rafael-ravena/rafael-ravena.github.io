@@ -151,5 +151,5 @@ p {
   body { padding-top: 90px; }
   p { padding-left: 0px; }
   h1 { margin-top: 5px; width: 100%; }
-  header#apresentacao:active, header#apresentacao:hover { height: 275px; }
+  header#apresentacao:active, header#apresentacao:hover, header#apresentacao:focus, header#apresentacao:focus-within { height: 275px; }
 }
