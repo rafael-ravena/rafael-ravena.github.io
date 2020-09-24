@@ -1,153 +1,250 @@
 ﻿@charset "utf-8";
-body, * {
-  font-family: 'Open Sans', sans-serif; 
-  margin: 0px;
-  padding: 0px;
+html {
+    scroll-behavior: smooth;
 }
-body { 
-  padding-top: 120px;
+
+body,
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
 }
-a, a:hover, a:active, a:focus, a:visited {
-  color: #1f4e79;
-  text-decoration: none;
-  font-weight: bold;
+
+body {
+    padding-left: 250px;
+    background-image: url("/Content/images/xperience.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-h1, h2, h4 {
-  font-family: 'Pathway Gothic One', sans-serif;
-  color: #1f4e79;
-  text-transform: uppercase;
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+    font-weight: bold;
 }
+
+h1,
+h2,
+h4 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+}
+
 h1 {
-  margin-top: 0px;
+    font-size: 1.8em;
+    margin-top: 0px;
 }
+
 h2 {
-  font-size: 24px;
+    font-size: 3em;
 }
+
 h3 {
-  font-size: 20px;
-  color: #767171;
-}
-#apresentacao {
-  padding: 5px;
-  background-color: #f5f5ff;
-  position: fixed;
-  top: 0; right: 0; left: 0;
-  height: 120px;
-  z-index: 998
-}
-#apresentacao .fa-container {
-  display: inline-block;
-  width: 15px;
-  text-align: center;
-}
-#download {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  z-index: 999;
-  background-color: #1f4e79;
-  border: 1px solid #3f6e99;
-  border-radius: 0px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#download a {
-  font-family: 'Pathway Gothic One';
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-#download a:hover {
-  font-weight: normal;
-}
-section {
-  border-bottom: 1px solid #1f4e79;
-}
-section:last-child {
-  border-bottom: none;
-}
-p {
-  padding-left: 50px;
-}
-.lista-com-borda>p {
-  border-bottom: 1px dashed #cacaca;
-}
-.lista-com-borda>p:last-child {
-  border-bottom: none;
-}
-.lista-xp div {
-  margin: 10px auto;
-}
-.lista-xp div:first-child {
-  margin-top: -25px;
-}
-.lista-xp dd {
-  border-bottom: 1px dashed #cacaca;
-  padding-bottom: 5px;
-}
-.lista-xp div:last-child dd {
-  border-bottom: none;
-}
-.lista-xp h4:first-child {
-  margin-top: 18px;
-  line-height: 27px
+    font-size: 1.2em;
 }
 
-
-/* tablet Landscape */
-@media (max-width: 1024px) and (orientation: portrait) {
-  #apresentacao {
-    background-color: #f5f5ff;
-    height: 160px;
-    z-index: 998
-  }
-  #apresentacao p { padding-left: 0px; }
-  #download {
-    display: none;
-  }
-  body { padding-top: 160px; }
-  h1 { margin-top: 0px; width: 50%; }
-}
-
-/* mobile Landscape */
-@media (max-width: 900px) and (orientation: landscape) {
-  #apresentacao {
-    background-color: #f5f5ff;
-    position: absolute;
-    height: 100vh;
-    z-index: 998;
-  }
-  #download {
-    position: absolute;
-    left: initial;
-    top: initial;
-    bottom: 60px;
+#Mobile-name {
+    position: fixed;
+    top: 0;
     right: 0;
-    border-radius: 0px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-  }
-  body { padding-top: 100vh; }
-  h1 { margin-top: 10px; }
+    left: 0;
+    background-color: #f5f5ff;
+    z-index: 998
 }
 
-/* mobile Portrait */
-@media (max-width: 599px) and (orientation: portrait) {
-  #apresentacao {
-    background-color: #f5f5ff;
+#Apresentacao {
+    padding: 5px;
+    background-color: #ffffff;
+    z-index: 998
+}
+
+#Apresentacao p {
+    font-size: .8em;
+}
+
+.list-group-item {
+    padding: 5px;
+    padding-left: 0px;
+    background-color: transparent;
+    border: none;
+    color: #000055;
+    font-size: .9em;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+}
+
+.list-group-item+.list-group-item {
+    margin-top: 0px;
+}
+
+section {
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: auto 120vh;
+    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
-    height: auto;
-    z-index: 998;
-  }
-  #download {
-    position: relative;
-    top: initial;
+    padding-top: 10vh;
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    background-color: rgba(245, 245, 255, .95);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+section .holder {
+    width: 60%;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+section .holder p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#Objetivo {
+    background-image: url("/Content/images/goals.jpg");
+}
+
+#Qualificacoes {
+    background-image: url("/Content/images/skills.jpg");
+}
+
+#Experiencia {
+    padding: 10px;
+    max-height: initial;
+}
+
+#Experiencia .holder {
+    margin: 3vh 5%;
+    width: initial;
+}
+
+#Experiencia .xp-entry {
+    width: 60%;
+    margin-left: 5%;
+}
+
+#Experiencia .xp-entry:nth-child(even) {
+    margin-left: 35%;
+}
+
+.xp-entry h4 {
     display: block;
-    width: 100%;
-    border-radius: 0px;
-    z-index: 997;
-  }
-  body { padding-top: 0px; }
-  p { padding-left: 0px; }
-  h1 { margin-top: 5px; width: 100%; }
+    clear: left;
+}
+
+.xp-entry h5 {
+    display: block;
+    float: right;
+}
+
+.xp-entry h3 {
+    display: block;
+    float: left;
+}
+
+.xp-entry p {
+    font-size: .8em;
+}
+
+#Formacao {
+    background-image: url("/Content/images/study.jpg");
+}
+
+#Cursos {
+    background-image: url("/Content/images/knowledge.jpg");
+}
+
+#Idiomas {
+    background-image: url("/Content/images/langs.jpg");
+}
+
+#Download {
+    position: absolute;
+    bottom: 5px;
+}
+
+@media (min-width: 800px) {
+    #Apresentacao {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 250px;
+    }
+}
+
+@media (max-width: 799.99px) {
+    body {
+        padding-left: 0px;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    #Areas {
+        display: none;
+    }
+    section {
+        padding: 5px;
+        background-size: cover;
+        min-height: initial;
+        max-height: initial;
+    }
+    section .holder {
+        width: initial;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    section .holder p {
+        font-size: .8em;
+    }
+    #Experiencia .holder {
+        margin: 5px;
+    }
+    #Experiencia .xp-entry {
+        width: initial;
+        margin-left: initial;
+    }
+    #Experiencia .xp-entry:nth-child(even) {
+        margin-left: initial;
+    }
+    .xp-entry h4,
+    .xp-entry h5,
+    .xp-entry h3 {
+        float: none;
+        display: block;
+        clear: both;
+    }
+    #Download {
+        position: initial;
+        bottom: initial;
+    }
 }
