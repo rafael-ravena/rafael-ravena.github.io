@@ -3,16 +3,25 @@ $(document).ready(function() {
         ParallaxSections();
         ParallaxThem()
     }
-    $(document).on("mousemove", function(event) {
+    $(document).on("mousemove", function (event) {
         mousePos.X = event.pageX;
         mousePos.Y = event.pageY;
         if (docWidth > mediaBreakpoint) {
             ParallaxSections();
         }
-    }).on("scroll", function() {
+    }).on("scroll", function () {
         if (docWidth > mediaBreakpoint) {
             ParallaxThem();
         }
+    }).on("click", "#Lang-selector > .inner-wrapper > a", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        nextLocation = window.location.origin;
+        nextLocation += "/" + $(this).attr("href");
+        if (window.location.hash) {
+            nextLocation += window.location.hash;
+        }
+        window.location.href = nextLocation;
     });
 });
 var mediaBreakpoint = 799.99;
@@ -48,3 +57,4 @@ function GetMouseY() {
     var factor = ((docHeight - mousePos.Y) / 2);
     return (-docHeight / 50) + (factor / 30) + "px";
 }
+
