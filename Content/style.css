@@ -53,13 +53,13 @@ h3 {
     z-index: 998
 }
 
-#Apresentacao {
+#Apresentacao, #presentation {
     padding: 5px;
     background-color: #ffffff;
     z-index: 998
 }
 
-    #Apresentacao p {
+#Apresentacao p, #presentation p {
         font-size: .8em;
     }
 
@@ -124,34 +124,34 @@ section {
             font-size: 1.2em;
         }
 
-#Objetivo {
+#Objetivo, #obj-section {
     background-image: url("/Content/images/goals.jpg");
 }
 
-#Qualificacoes {
+#Qualificacoes, #quali-section {
     background-image: url("/Content/images/skills.jpg");
 }
 
-#Competencias {
+#Competencias, #comp-section {
     background-image: url("/Content/images/skills.png");
 }
 
-#Experiencia {
+#Experiencia, #xp-section {
     padding: 10px;
     max-height: initial;
 }
 
-    #Experiencia .holder {
+    #Experiencia .holder, #xp-section .holder {
         margin: 3vh 5%;
         width: initial;
     }
 
-    #Experiencia .xp-entry {
+    #Experiencia .xp-entry, #xp-section .xp-entry {
         width: 60%;
         margin-left: 5%;
     }
 
-        #Experiencia .xp-entry:nth-child(even) {
+        #Experiencia .xp-entry:nth-child(even), #xp-section .xp-entry:nth-child(even) {
             margin-left: 35%;
         }
 
@@ -181,15 +181,15 @@ section {
         margin-bottom: 0px;
     }
 
-#Formacao {
+#Formacao, #bg-section {
     background-image: url("/Content/images/study.jpg");
 }
 
-#Cursos {
+#Cursos, #crs-section {
     background-image: url("/Content/images/knowledge.jpg");
 }
 
-#Idiomas {
+#Idiomas, #lang-section {
     background-image: url("/Content/images/langs.jpg");
 }
 
@@ -211,7 +211,7 @@ section {
     }
 
 @media (min-width: 800px) {
-    #Apresentacao {
+    #Apresentacao, #presentation {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -275,16 +275,16 @@ section {
                 font-size: .8em;
             }
 
-    #Experiencia .holder {
+    #Experiencia .holder, #xp-section .holder {
         margin: 5px;
     }
 
-    #Experiencia .xp-entry {
+    #Experiencia .xp-entry, #xp-section .xp-entry {
         width: initial;
         margin-left: initial;
     }
 
-        #Experiencia .xp-entry:nth-child(even) {
+        #Experiencia .xp-entry:nth-child(even), #xp-section .xp-entry:nth-child(even) {
             margin-left: initial;
         }
 
@@ -299,7 +299,7 @@ section {
         text-align: center;
     }
 
-    #Apresentacao {
+    #Apresentacao, #presentation {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -307,8 +307,8 @@ section {
         height: 80vh;
     }
 
-        #Apresentacao p {
-            text-align: center;
+    #Apresentacao p, #presentation p {
+        text-align: center;
         }
 
     #Lang-selector {
