@@ -1,35 +1,79 @@
 Consider you're writing down instructions for a field trip you're about to dive in.
+
 The goal is to hop onto your motorbike, riding all the way to another city, stop at a gas station there, buy a cup of ice cream, eat it without getting your engine or seat all messed up with melted ice cream, go to some friend's house, kiss and cuddle, feel awesome and go back home.
+
 Then you start to think of the possible setbacks and adversities.
+
 So you'll kick it off with possible setback conditions: "if it is cold, I'll have to wear a sweater. What if I forget the bike keys? Do I have money for the Ice cream? Is the motorräder's (that’s German for motorcycle) tank full?"
+
 So let's start writing instructions:
-if you have the key and the fuel tank is loaded and the weather is cold and you have money and A and B and C, then go do stuff!
-else if you  don’t have the keys, but it is cold too, and and and... then go do it differently!
+
+if you have the keys and the fuel tank is loaded and the weather is cold and you have money and A and B and C then go do stuff!
+
+else if you don’t have the keys, but it is cold too, and and and... then go do it differently!
+
 another else!
+
 And yet another!
+
 And so on until all you want is a pew-pew to shoot the instructions – as if you could actually literally shoot words and thoughts, right?
-And it can get worse! Imagine that now you also have to drop a pack of cold ones at a friend's house before driving to the gas station? Or maybe you need to take 3 passengers along with you?
+
+And it can get worse! Imagine that now you also have to drop a pack of cold ones at a friend's house before driving to the gas station? Or you need to take 3 passengers along with you?
+
 Well, we'll have to rewrite the whole instructions again, and get another even more powerful rhetorical weapon, right?
+
 Wrong! That's not how you do it! When you're sane enough, at least you'll think of any conditions in their own context, apart from any other complexity-increasing madness.
+
 That's the same idea with software code! All you want to do is read it and understand it properly!
+
 Reading bad code can make you feel a lot like Pulp Fiction’s Jules Winnfield.
-At first, you don’t want to hurt anyone, but as you’re going through each line, you start to wonder: English, do they even speak it?
-You fight hard not to lose it:  I don't wanna hear about no ifs!
-But in the end, you’re shouting at the indentations: Say ‘ELSE’ again. Say ‘ELSE’ again! I dare you! I double dare you !!! Say ‘ELSE’ one more [censored] time!!!
+
+At first, you don’t want to hurt anyone, but as you’re going through each line, you start to wonder: "English, do they even speak it?"
+
+You fight hard not to lose it: "I don't wanna hear about no ifs!"
+
+But in the end, you’re shouting at the indentations: "Say ‘ELSE’ again. Say ‘ELSE’ again! I dare you! I double dare you [censored]!!! Say ‘ELSE’ one more [censored] time!!!"
+
 Bad code can bring out the Tarantino in you.
+
+Maximize image
+Edit image
+Delete image
+
+Jules looking at bad code
 So let’s restart, shall we?
+
 1️⃣ Understand the problem. Knowing deep and detailed aspects of the whole thing enables you to describe the steps to solve it. So you can actually foresee and prevent issues in a way you’re prepared for. Understanding the business processes is one of the basic DDD principles.
+
 2️⃣ Use business adherent language. Anyone who needs to understand the thing must be able to, without any further instructions. The language shouldn’t be a complication, like using German words for English instructions. Remember to keep readability in mind. The names of the methods, variables or classes, for instance, should be meaningful and understood at first glance. The method PickUpTheKeysFromYourPocket is way better than CheckTheThing.
-3️⃣ Modularize concepts. Break down the whole idea into smaller parts, make any part the owner of its own concern. For instance, the vehicle matter should have its own module, minding the keys issue also should have its own, separate from each other. So when you hop on it, it doesn’t matter if it’s at the start of the journey, or after stopping for ice cream, or if it's time to go back home, it will be the same vehicle with the same operations, differing only on a few variables. That’s Componentization, a primary elemental systems concept.
+
+3️⃣ Modularize concepts. Break down the whole idea into smaller parts, make any part the owner of its own concern. For instance, the vehicle matter should have its own module, minding the keys issue also should have its own, separate from each other. So when you hop on it, it doesn’t matter if it’s at the start of the journey, or after stopping for ice cream, or if its time to go back home, it will be the same vehicle with the same operations, differing only on a few variables. That’s Componentization, a primary elemental systems concept.
+
 4️⃣ Use SOLID principles. It will SOLID-ly help you create more reliable, robust and accurate instructions! (pun intended)
+
 Apply SRP by parting each subject into its own module (vehicle, ice cream, friends visiting, ).
+
 Embed OCP so you won’t need to change anything when you now need to deliver your mom’s lunch on the way.
+
 Ensure LSP by designing so any vehicle does the deed, be it a motorbike or a bus.
+
 Add ISP by making the vehicle independent from its ignition / security process, be it a key, facial recognition, a PIN on a keypad, or telepathic superpowers.
+
 And DIP in there by making the payment method an interface to buy gas or ice cream, or even a gift to ensure the kissing and cuddling, enhancing decoupling.
+
 5️⃣ Avoid Design Patterns overkill. Design Patterns are common solutions for common problems. They are solely intended to solve single isolated problems. But if you have too many ones in there, it increases the complexity. And let’s face it, this probably means you brought the problem in itself just so you can use it, right?
+
 6️⃣ Remember: Ifs and Elses are a nightmare. When there’s an “else” in your code, it means you haven’t thought it through accurately enough. In the main code flow, an “if” should have its own instructions inside. If you have the same instructions inside the “if” and the “else”, keep refactoring it out until you don’t. When the instruction about the keys says “if you have the keys, start the car. Else grab the keys and then start the car”, we should throw the keys at whoever wrote it!
+
+Minimize image
+Edit image
+Delete image
+
+can you imagine what could or should happen here?
 7️⃣ Make sure your instruction works. You can use TDD principles and approaches to assess whether everything works indeed. Use straight-forward Yes/No questions, such as “is there something on my teeth?”, or “does my breath smell?”, or “am I wearing that old trashed smelly pair of socks with nothing but holes in it?”. Think of all business possible matters and check each solely. After all, the main concern here is getting the kisses and cuddling part, right?
+
 8️⃣ Refactor it. Think it through, then do it again and again. Then check where and how you can improve it. Refactoring allows you to iteratively improve your code, remove duplication, reduce complexity, and enhance maintainability.
+
 With all of that we all can start writing better code, creating better software and getting less and less cursed by our future selves while reading our own code. And while we’re at it, all jokes aside: please, tame your inner Jules Winnfield. Only curse yourself! Only curse your own code! However bad some else's code is, we never know in what conditions it was written.
+
 Want to learn more about good software coding? Here are some references:
