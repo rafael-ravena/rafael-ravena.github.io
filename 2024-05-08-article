@@ -10,7 +10,7 @@ So let's start writing instructions:
 
 if you have the keys and the fuel tank is loaded and the weather is cold and you have money and A and B and C then go do stuff!
 
-else if you don’t have the keys, but it is cold too, and and and... then go do it differently!
+else if you don't have the keys, but it is cold too, and and and... then go do it differently!
 
 another else!
 
@@ -18,7 +18,7 @@ And yet another!
 
 And so on until all you want is a pew-pew to shoot the instructions – as if you could actually literally shoot words and thoughts, right?
 
-And it can get worse! Imagine that now you also have to drop a pack of cold ones at a friend's house before driving to the gas station? Or you need to take 3 passengers along with you?
+And it can get worse! Imagine that now you also have to drop a pack of cold ones at a friend's house before driving to the gas station? Or maybe you need to take 3 passengers along with you?
 
 Well, we'll have to rewrite the whole instructions again, and get another even more powerful rhetorical weapon, right?
 
@@ -57,7 +57,7 @@ Embed OCP so you won’t need to change anything when you now need to deliver yo
 
 Ensure LSP by designing so any vehicle does the deed, be it a motorbike or a bus.
 
-Add ISP by making the vehicle independent from its ignition / security process, be it a key, facial recognition, a PIN on a keypad, or telepathic superpowers.
+Add ISP by making the vehicle independent from its ignition / security process, regardless if it’s a key, facial recognition, a PIN on a keypad, or telepathic superpowers.
 
 And DIP in there by making the payment method an interface to buy gas or ice cream, or even a gift to ensure the kissing and cuddling, enhancing decoupling.
 
