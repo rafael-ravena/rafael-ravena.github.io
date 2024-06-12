@@ -4,7 +4,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body, * {
+body,
+* {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -20,13 +21,19 @@ body {
     background-size: cover;
 }
 
-a, a:hover, a:active, a:focus, a:visited {
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
     text-decoration: none;
     font-weight: bold;
     color: #209CEE;
 }
 
-h1, h2, h4 {
+h1,
+h2,
+h4 {
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
 }
@@ -53,15 +60,17 @@ h3 {
     z-index: 998
 }
 
-#Apresentacao, #presentation {
+#Apresentacao,
+#presentation {
     padding: 5px;
     background-color: #ffffff;
     z-index: 998
 }
 
-#Apresentacao p, #presentation p {
-        font-size: .8em;
-    }
+#Apresentacao p,
+#presentation p {
+    font-size: .8em;
+}
 
 .list-group-item {
     padding: 5px;
@@ -81,7 +90,7 @@ a.list-group-item {
     color: #209CEE;
 }
 
-.list-group-item + .list-group-item {
+.list-group-item+.list-group-item {
     margin-top: 0px;
 }
 
@@ -97,63 +106,83 @@ section {
     overflow: hidden;
 }
 
-    section::before {
-        content: "";
-        background-color: rgba(245, 245, 255, .95);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+section::before {
+    content: "";
+    background-color: rgba(245, 245, 255, .95);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
-    section .holder {
-        width: 60%;
-        padding: 25px;
-        border-radius: 25px;
-        background-color: #ffffff;
-        margin: 0 auto;
-    }
+section .holder {
+    width: 60%;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
 
-        section .holder h2 {
-            color: #209CEE;
-        }
+section .holder h2 {
+    color: #209CEE;
+}
 
-        section .holder p {
-            text-align: justify;
-            font-size: 1.2em;
-        }
+section .holder p {
+    text-align: justify;
+    font-size: 1.2em;
+}
 
-#Objetivo, #obj-section {
+#Objetivo,
+#obj-section {
     background-image: url("/Content/images/goals.jpg");
 }
 
-#Qualificacoes, #quali-section {
+#Qualificacoes,
+#quali-section {
     background-image: url("/Content/images/skills.jpg");
 }
 
-#Competencias, #comp-section {
+#Competencias,
+#comp-section {
     background-image: url("/Content/images/skills.png");
 }
 
-#Experiencia, #xp-section {
+#Experiencia,
+#xp-section {
     padding: 10px;
     max-height: initial;
 }
 
-    #Experiencia .holder, #xp-section .holder {
-        margin: 3vh 5%;
-        width: initial;
-    }
+#Experiencia .holder.flags,
+#xp-section .holder.flags {
+    text-align: center;
+}
 
-    #Experiencia .xp-entry, #xp-section .xp-entry {
-        width: 60%;
-        margin-left: 5%;
-    }
+#Experiencia .holder.flags a,
+#xp-section .holder.flags a {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 15px;
+}
 
-        #Experiencia .xp-entry:nth-child(even), #xp-section .xp-entry:nth-child(even) {
-            margin-left: 35%;
-        }
+#Experiencia .holder,
+#xp-section .holder {
+    margin: 3vh 5%;
+    width: initial;
+}
+
+#Experiencia .xp-entry,
+#xp-section .xp-entry {
+    width: 60%;
+    margin-left: 5%;
+}
+
+#Experiencia .xp-entry:nth-child(even),
+#xp-section .xp-entry:nth-child(even) {
+    margin-left: 35%;
+}
+
 
 .xp-entry h4 {
     display: block;
@@ -175,21 +204,24 @@ section {
     font-size: .8em;
 }
 
-    .xp-entry p.lead {
-        font-weight: bold;
-        color: #209CEE;
-        margin-bottom: 0px;
-    }
+.xp-entry p.lead {
+    font-weight: bold;
+    color: #209CEE;
+    margin-bottom: 0px;
+}
 
-#Formacao, #bg-section {
+#Formacao,
+#bg-section {
     background-image: url("/Content/images/study.jpg");
 }
 
-#Cursos, #crs-section {
+#Cursos,
+#crs-section {
     background-image: url("/Content/images/knowledge.jpg");
 }
 
-#Idiomas, #lang-section {
+#Idiomas,
+#lang-section {
     background-image: url("/Content/images/langs.jpg");
 }
 
@@ -201,17 +233,19 @@ section {
     right: 0px;
 }
 
-    #Lang-selector a {
-        margin-top: auto;
-    }
+#Lang-selector a {
+    margin-top: auto;
+}
 
-    #Lang-selector img {
-        height: 30px;
-        vertical-align: baseline;
-    }
+#Lang-selector img {
+    height: 30px;
+    vertical-align: baseline;
+}
 
 @media (min-width: 800px) {
-    #Apresentacao, #presentation {
+
+    #Apresentacao,
+    #presentation {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -265,30 +299,35 @@ section {
         max-height: initial;
     }
 
-        section .holder {
-            width: initial;
-            padding: 5px;
-            border-radius: 5px;
-        }
+    section .holder {
+        width: initial;
+        padding: 5px;
+        border-radius: 5px;
+    }
 
-            section .holder p {
-                font-size: .8em;
-            }
+    section .holder p {
+        font-size: .8em;
+    }
 
-    #Experiencia .holder, #xp-section .holder {
+    #Experiencia .holder,
+    #xp-section .holder {
         margin: 5px;
     }
 
-    #Experiencia .xp-entry, #xp-section .xp-entry {
+    #Experiencia .xp-entry,
+    #xp-section .xp-entry {
         width: initial;
         margin-left: initial;
     }
 
-        #Experiencia .xp-entry:nth-child(even), #xp-section .xp-entry:nth-child(even) {
-            margin-left: initial;
-        }
+    #Experiencia .xp-entry:nth-child(even),
+    #xp-section .xp-entry:nth-child(even) {
+        margin-left: initial;
+    }
 
-    .xp-entry h4, .xp-entry h5, .xp-entry h3 {
+    .xp-entry h4,
+    .xp-entry h5,
+    .xp-entry h3 {
         float: none;
         display: block;
         clear: both;
@@ -299,7 +338,8 @@ section {
         text-align: center;
     }
 
-    #Apresentacao, #presentation {
+    #Apresentacao,
+    #presentation {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -307,9 +347,10 @@ section {
         height: 80vh;
     }
 
-    #Apresentacao p, #presentation p {
+    #Apresentacao p,
+    #presentation p {
         text-align: center;
-        }
+    }
 
     #Lang-selector {
         left: 0px;
@@ -317,12 +358,12 @@ section {
         bottom: 10px;
     }
 
-        #Lang-selector a {
-            padding: 0px 20px;
-        }
+    #Lang-selector a {
+        padding: 0px 20px;
+    }
 
-        #Lang-selector img {
-            width: 25vw;
-            height: auto;
-        }
+    #Lang-selector img {
+        width: 25vw;
+        height: auto;
+    }
 }
